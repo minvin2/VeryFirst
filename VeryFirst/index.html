@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINDAUGAS WEB</title>
+    <link rel="stylesheet" href="css/mindaugo_main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+        <img src="images/logo.svg" alt="Mindaugo logo">
+
+        <nav>
+            <a href="#" class="hide-desktop">
+                <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+            </a>
+
+            <ul class="show-desktop hide-mobile" id="nav">
+                <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg" alt="exit menu"></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <section>
+            <img src="images/server.svg" alt="server graphic" class="server">
+        
+            <h1>Design by Mindaugas</h1>
+            <p class="subhead">Hi this is my very first front-end page</p>
+            <img src="images/scroll.svg" alt="scroll down" class="scroll hide-mobile show-desktop">
+        </section>
+    </div>
+
+    <div class="blue-container">
+
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/icon-1.svg" alt="Calander icon">
+                    <p>What are you searching for?</p>
+				
+                </li>
+                <li>
+                    <img src="images/icon-2.svg" alt="Calander icon">
+                    <p>Try this one</p>
+                </li>
+                <li>
+                    <img src="images/icon-3.svg" alt="Calander icon">
+                    <p>This gone help, lets begin</p>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    
+    <div class="gray-container">
+
+        <div class="container">
+            <ul>
+            <li>
+                <figure>
+                    <img class="photo" src="images/user1.png" alt="User1">
+                     <blockquote>Hi, nice to meet you</blockquote>
+                    <figcaption>Mind Vinc</figcaption>
+            </figure>
+                
+            </li>
+
+            <li>
+                <figure>
+                    <img class="photo" src="images/user1.png" alt="User1">
+                     <blockquote>Perfect! </blockquote>
+                    <figcaption>Mind Vinc</figcaption>
+            </figure>
+                
+            </li>
+
+            </ul>
+            </div>
+    </div>
+
+    <div class="container">
+        <h2>Start your free trial now</h2>
+        <a href="#" class="cta">Get Started</a>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a href="#">
+                    <img src="images/logo-white.svg" alt="logo" class="logo">
+                </a>
+                    <p class="adress"> Kaunas Piliamiestis 15-6</p>
+                    <ul class="footer-links">
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+
+
+            </div>
+        </div>
+    </footer>
+
+<script>
+
+        var menu= document.getElementById('menu');
+        var nav= document.getElementById('nav');
+        var exit= document.getElementById('exit');
+
+
+        menu.addEventListener('click',function(e) {
+            nav.classList.toggle('hide-mobile'); 
+            e.preventDefault();
+
+        });
+
+
+        exit.addEventListener('click',function(e) {
+            nav.classList.add('hide-mobile'); 
+            e.preventDefault();
+
+        });
+
+
+</script>
+
+
+</body>
+</html>
